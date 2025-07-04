@@ -54,7 +54,7 @@ def send_email(recipient):
     
     translator = Translator()
     translated = translator.translate(english_msg, dest='hi')
-    hindi_msg = translated.text
+    hindi_msg = translated
 
     full_msg = f" Flood Alert!\n\nENGLISH:\n{english_msg}\n\nहिंदी:\n{hindi_msg}"
 
