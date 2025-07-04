@@ -93,3 +93,12 @@ if st.button(" 🔍Check Flood Risk"):
                 st.success(" No Flood Expected. You are Safe.")
     else:
         st.warning(" Please enter a city name.")
+
+hide_menu = """
+<style>
+#MainMenu {visibility: hidden;}
+footer {visibility: hidden;}
+header {visibility: hidden;}
+</style>
+"""
+st.markdown(hide_menu, unsafe_allow_html=True)
